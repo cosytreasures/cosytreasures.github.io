@@ -44,6 +44,10 @@
   .nav.is-scrolled{ background:rgba(243,236,224,.96); padding:1rem 6vw; box-shadow:0 4px 20px rgba(36,29,26,.08); }
   .nav-mark{ font-family:'Cormorant Garamond',serif; font-style:italic; font-size:1.4rem; color:var(--oat); transition:color .4s; }
   .nav.is-scrolled .nav-mark{ color:var(--ink); }
+  .nav-logo{ height:38px; width:auto; display:none; object-fit:contain; }
+  .nav-mark-text{ display:inline; }
+  .nav.is-scrolled .nav-mark-text{ display:none; }
+  .nav.is-scrolled .nav-logo{ display:block; }
   .nav-links{ display:flex; gap:2.2rem; font-size:.82rem; letter-spacing:.1em; text-transform:uppercase; color:var(--oat); transition:color .4s; }
   .nav.is-scrolled .nav-links{ color:var(--ink-soft); }
   .nav-links a{ position:relative; }
@@ -182,7 +186,10 @@
 <body>
 
 <nav class="nav" id="nav">
-  <a href="#" class="nav-mark">The Cosy &amp; Treasures</a>
+  <a href="#" class="nav-mark">
+    <span class="nav-mark-text">The Cosy &amp; Treasures</span>
+    <img src="cosylogo.jpg" alt="Cosy &amp; Treasures" class="nav-logo">
+  </a>
   <div class="nav-links">
     <a href="#story">Our Story</a>
     <a href="#reviews">Reviews</a>
